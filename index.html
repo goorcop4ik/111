@@ -1,133 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>California Club | Karlovy Vary</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Club | Karlovy Vary Local Bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0c0a09; scroll-behavior: smooth; }
+        .font-oswald { font-family: 'Oswald', sans-serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), 
+                        url('https://i.ibb.co/d4kv80LL/IMG-0218.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .outline-title {
+            color: white;
+            -webkit-text-stroke: 1.5px white;
+            text-transform: uppercase;
+            font-size: clamp(2.5rem, 12vw, 7rem);
+            line-height: 0.9;
+            text-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+
+        .readable-text {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.85rem;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            padding-bottom: 0.35rem;
+        }
+        
+        .item-name {
+            color: #ffffff !important;
+            font-weight: 700;
+            letter-spacing: 0.025em;
+            font-size: 1.1rem;
+        }
+    </style>
 </head>
+<body class="text-white">
 
-<body class="bg-neutral-100 text-neutral-800">
+    <header class="hero-bg min-h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-6xl">
+            <p class="text-amber-400 font-bold tracking-[0.3em] uppercase mb-4 text-sm readable-text tracking-widest">The Local Gem of Karlovy Vary</p>
+            
+            <h1 class="outline-title font-oswald italic mb-10">
+                CALIFORNIA <br> CLUB
+            </h1>
 
-<!-- HERO -->
-<section class="relative min-h-screen flex items-center justify-center">
-  <img
-    src="https://images.unsplash.com/photo-1514933651103-005eec06c04b"
-    class="absolute inset-0 w-full h-full object-cover"
-    alt="California Club Bar"
-  />
-  <div class="absolute inset-0 bg-black/60"></div>
+            <p class="text-lg md:text-2xl text-stone-100 font-light max-w-2xl mx-auto readable-text">
+                Hidden garden, ice-cold beer, and fair prices. The best spot to escape the tourist crowds and enjoy the real vibe.
+            </p>
+            
+            <div class="mt-20 animate-bounce opacity-50">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </div>
+        </div>
+    </header>
 
-  <div class="relative z-10 text-center text-white max-w-2xl px-6">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">California Club</h1>
-    <p class="text-lg mb-6">
-      Local bar in Karlovy Vary with real atmosphere and fair prices
-    </p>
-    <a
-      href="#menu"
-      class="inline-block bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-xl font-semibold transition"
-    >
-      View Menu
-    </a>
-  </div>
-</section>
+    <section id="menu" class="py-24 px-4 bg-stone-950">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-oswald uppercase italic text-amber-500 italic">Nápojový Lístek</h2>
+                <p class="text-stone-400 uppercase tracking-widest mt-2 font-bold">Prices in CZK</p>
+            </div>
 
-<!-- ABOUT -->
-<section class="py-16 px-6">
-  <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow p-8 text-center">
-    <p class="text-lg leading-relaxed">
-      California Club is a cozy local bar in Karlovy Vary.<br>
-      Garden in the back, pool table, sports on TV inside and outside.<br>
-      Friendly staff, generous portions and non-touristic prices.
-    </p>
-  </div>
-</section>
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+                <div>
+                    <h3 class="text-2xl font-oswald uppercase text-amber-400 mb-6 border-b-2 border-amber-500 w-fit pr-4 italic">Pivo</h3>
+                    <div class="menu-item"><span class="item-name">Pilsner Urquell 0.5l</span><span class="font-bold text-amber-500 text-lg">55,-</span></div>
+                    <div class="menu-item"><span class="item-name">Pilsner Urquell 0.3l</span><span class="font-bold text-amber-500 text-lg">35,-</span></div>
+                    <div class="menu-item"><span class="item-name">Svijanský Šlik 0.5l</span><span class="font-bold text-amber-500 text-lg">45,-</span></div>
+                    <div class="menu-item"><span class="item-name">Budvar 10° 0.5l</span><span class="font-bold text-amber-500 text-lg">45,-</span></div>
+                    <div class="menu-item"><span class="item-name">Krušovice Bohém 0.5l</span><span class="font-bold text-amber-500 text-lg">45,-</span></div>
+                    <div class="menu-item"><span class="item-name">Birell (nealko) 0.5l</span><span class="font-bold text-amber-500 text-lg">45,-</span></div>
+                </div>
 
-<!-- FEATURES -->
-<section class="py-12 bg-neutral-200">
-  <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
-    <div class="bg-white p-6 rounded-xl shadow text-center">🍺 Cheap Beer</div>
-    <div class="bg-white p-6 rounded-xl shadow text-center">🌿 Garden & Smoking Area</div>
-    <div class="bg-white p-6 rounded-xl shadow text-center">🎱 Pool Table & Sports</div>
-  </div>
-</section>
+                <div>
+                    <h3 class="text-2xl font-oswald uppercase text-amber-400 mb-6 border-b-2 border-amber-500 w-fit pr-4 italic">Lihoviny (0.04l)</h3>
+                    <div class="menu-item"><span class="item-name">Becherovka</span><span class="font-bold text-amber-500 text-lg">44,-</span></div>
+                    <div class="menu-item"><span class="item-name">Slivovice 50%</span><span class="font-bold text-amber-500 text-lg">74,-</span></div>
+                    <div class="menu-item"><span class="item-name">Vodka Finlandia</span><span class="font-bold text-amber-500 text-lg">54,-</span></div>
+                    <div class="menu-item"><span class="item-name">Jägermeister</span><span class="font-bold text-amber-500 text-lg">54,-</span></div>
+                    <div class="menu-item"><span class="item-name">Absinth 70%</span><span class="font-bold text-amber-500 text-lg">74,-</span></div>
+                    <div class="menu-item"><span class="item-name">Gin</span><span class="font-bold text-amber-500 text-lg">64,-</span></div>
+                </div>
 
-<!-- MENU -->
-<section id="menu" class="py-20 px-6">
-  <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow p-10 text-center">
-    <h2 class="text-3xl font-bold mb-4">Menu</h2>
-    <p class="text-neutral-600 mb-8">
-      Great beer prices, tasty food and generous portions
-    </p>
-    <a
-      href="#"
-      class="bg-yellow-500 hover:bg-yellow-600 text-black px-10 py-4 rounded-xl font-semibold transition"
-    >
-      Open Menu (PDF)
-    </a>
-  </div>
-</section>
+                <div>
+                    <h3 class="text-2xl font-oswald uppercase text-amber-400 mb-6 border-b-2 border-amber-500 w-fit pr-4 italic">Víno</h3>
+                    <div class="menu-item"><span class="item-name">Víno bílé / červené 0.2l</span><span class="font-bold text-amber-500 text-lg">40,-</span></div>
+                    <div class="menu-item"><span class="item-name">Prosecco 0.2l</span><span class="font-bold text-amber-500 text-lg">70,-</span></div>
+                    <div class="menu-item"><span class="item-name">Lambrusco 0.75l</span><span class="font-bold text-amber-500 text-lg">160,-</span></div>
+                </div>
 
-<!-- REVIEWS -->
-<section class="py-16 bg-neutral-200 px-6">
-  <h2 class="text-3xl font-bold text-center mb-10">Guests Reviews</h2>
-  <div class="max-w-5xl mx-auto grid sm:grid-cols-2 gap-6">
-    <div class="bg-white p-6 rounded-xl shadow">“Very cozy bar, great music and prices.”</div>
-    <div class="bg-white p-6 rounded-xl shadow">“One of the best local pubs in Karlovy Vary.”</div>
-    <div class="bg-white p-6 rounded-xl shadow">“Cheap beer, friendly staff, real local vibe.”</div>
-    <div class="bg-white p-6 rounded-xl shadow">“Not touristy at all. Worth the visit.”</div>
-  </div>
-</section>
+                <div>
+                    <h3 class="text-2xl font-oswald uppercase text-amber-400 mb-6 border-b-2 border-amber-500 w-fit pr-4 italic">Rumy (0.04l)</h3>
+                    <div class="menu-item"><span class="item-name">Republica</span><span class="font-bold text-amber-500 text-lg">64,-</span></div>
+                    <div class="menu-item"><span class="item-name">Havana 3y.o.</span><span class="font-bold text-amber-500 text-lg">64,-</span></div>
+                    <div class="menu-item"><span class="item-name">Captain Morgan</span><span class="font-bold text-amber-500 text-lg">64,-</span></div>
+                    <div class="menu-item"><span class="item-name">Diplomatico</span><span class="font-bold text-amber-500 text-lg">120,-</span></div>
+                    <div class="menu-item"><span class="item-name">Zacapa 23 y.o.</span><span class="font-bold text-amber-500 text-lg">120,-</span></div>
+                </div>
+            </div>
+            <p class="text-center text-stone-600 text-[10px] mt-16 uppercase tracking-widest">Informace o alergenech na vyžádání u obsluhy</p>
+        </div>
+    </section>
 
-<!-- CONTACT + HOURS -->
-<section class="py-20 px-6">
-  <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow p-10">
-    <h2 class="text-3xl font-bold text-center mb-6">Visit Us</h2>
+    <section id="contact" class="py-24 px-4 bg-stone-900/80 border-y border-white/10 shadow-inner">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            <h2 class="text-5xl font-oswald uppercase italic text-white italic">Visit Us Today</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-stone-800/50 p-10 rounded-3xl border border-white/5 shadow-2xl backdrop-blur-sm">
+                    <p class="text-amber-500 text-xs font-black uppercase tracking-widest mb-4">Location</p>
+                    <p class="text-2xl text-white font-bold italic">Tyršova 1753/2<br>360 01 Karlovy Vary</p>
+                </div>
+                <div class="bg-stone-800/50 p-10 rounded-3xl border border-white/5 shadow-2xl backdrop-blur-sm">
+                    <p class="text-amber-500 text-xs font-black uppercase tracking-widest mb-4">Direct Call</p>
+                    <a href="tel:+420777289993" class="text-2xl font-black text-white hover:text-amber-400 transition underline decoration-amber-500 underline-offset-8">+420 777 289 993</a>
+                </div>
+            </div>
+            <div class="pt-10">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Tyršova+1753/2,+360+01+Karlovy+Vary" 
+                   target="_blank" 
+                   class="inline-flex items-center gap-4 bg-white text-black px-12 py-6 rounded-2xl font-black text-xl hover:bg-amber-500 transition shadow-2xl uppercase tracking-[0.1em]">
+                    <i class="fas fa-location-arrow text-2xl"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <div class="grid md:grid-cols-2 gap-10 items-start">
-
-      <!-- OPENING HOURS -->
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Opening Hours</h3>
-        <ul class="space-y-2 text-neutral-700">
-          <li class="flex justify-between"><span>Monday</span><span>14:00 – 23:50</span></li>
-          <li class="flex justify-between"><span>Tuesday</span><span>14:00 – 23:50</span></li>
-          <li class="flex justify-between"><span>Wednesday</span><span>14:00 – 23:50</span></li>
-          <li class="flex justify-between"><span>Thursday</span><span>14:00 – 23:50</span></li>
-          <li class="flex justify-between font-semibold"><span>Friday</span><span>14:00 – 02:00</span></li>
-          <li class="flex justify-between font-semibold"><span>Saturday</span><span>14:00 – 02:00</span></li>
-          <li class="flex justify-between"><span>Sunday</span><span>14:00 – 23:50</span></li>
-        </ul>
-      </div>
-
-      <!-- MAP -->
-      <div class="w-full h-64 rounded-xl overflow-hidden shadow">
-        <iframe
-          class="w-full h-full border-0"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Karlovy%20Vary&output=embed">
-        </iframe>
-      </div>
-
-    </div>
-
-    <div class="text-center mt-10">
-      <a
-        href="#"
-        class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-xl font-semibold transition"
-      >
-        Get Directions
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="py-6 text-center text-sm text-neutral-500">
-  California Club · Karlovy Vary · Czech Republic
-</footer>
+    <footer class="py-20 text-center text-stone-500 text-xs uppercase tracking-[0.3em]">
+        <p class="mb-3 font-bold text-stone-300 italic">© California Club Karlovy Vary</p>
+    </footer>
 
 </body>
 </html>
